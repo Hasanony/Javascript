@@ -52,4 +52,21 @@ console.log(div);
 let menu=document.getElementById("menu");
  let list=document.createElement("li");
  list.innerHTML="contact";
- menu.appendChild(list);
+ menu.appendChild(list); 
+
+
+
+ /*insertadjacenthtml
+ postionname are
+ *beforebegin
+ *afterbegin
+ *beforeend
+ *afterend
+ */
+
+ menu.insertAdjacentHTML("afterbegin","<li>about</li>");
+
+
+ //removechild
+
+ menu.removeChild(menu.firstElementChild);
